@@ -2,11 +2,11 @@
 Project2-Group4
 
 ## Group Members
-Girish Hosalli
-Christine Chung
-Shephali Dubey
-Xiwu Dai
-Chearine Pringle
+* Girish Hosalli
+* Christine Chung
+* Shephali Dubey
+* Xiwu Dai
+* Chearine Pringle
 
 ## Project Overview
 The aim of our project is to discover trends in air pollution in New York City (NYC) and Long Island (LI) by analyzing the Air Quality Index (AQI) data from the past two years. Additionally, we will predict the AQI for the upcoming year using machine learning models. This analysis will provide valuable insights for individuals, especially those in sensitive groups (such as children, elderly people, and those with respiratory conditions), helping them to understand when it is safe to go outside and when they should take precautions.

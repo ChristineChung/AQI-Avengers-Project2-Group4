@@ -52,11 +52,11 @@ Canadian Wildfires: Most recently, in June 2023, severe wildfires in Quebec led 
 ## Result Summary
 Our analysis revealed important temporal and spatial trends in air quality. Over multiple years, we observed long-term trends and seasonal patterns, with higher AQI scores typically occurring in the summer months. Spatial variations were also evident, with different counties exhibiting varying levels of air quality due to factors such as population density, industrial activity, and local geography. Pollutant-specific observations highlighted that ozone levels were higher in the summer, while PM2.5 levels showed significant variability and were often the primary drivers of high AQI scores. Nitrogen Dioxide levels were generally higher in urban areas and during winter months.
 
-The Random Forest Regressor model demonstrated high train accuracy at 98.9% and test accuracy at 92.6%, while the Prophet model showed that its predictive accuracy decreased over time, with RMSE between 9.48 to 12.95 points and mean absolute error (MAE) between 7.5 to 9.17 points.
+The Random Forest Regressor model demonstrated high train accuracy at 98.9% and test accuracy at 92.6%, as well as better R-squared and MSE scores than other regression models.
 
 
 ![Prophet Model](Images/Prophet_Model.jpg)
-The plot above portrays that the Prophet Model is a good fit to predict future AQI trends!
+The plot above portrays that the Prophet Model is also a good fit to predict future AQI trends!
 
 
 ## Future Work

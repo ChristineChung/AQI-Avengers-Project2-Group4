@@ -47,15 +47,17 @@ Canadian Wildfires: Most recently, in June 2023, severe wildfires in Quebec led 
 ### Other Notable Observations:
 * Winter Inversions: There are periods in winter months where pollutant levels (particularly PM2.5 and NO2) remain elevated for several days, possibly due to temperature inversions trapping pollutants near the ground.
 * Summer Ozone Events: Occasionally, there are days with very high ozone levels, typically during hot, sunny days in summer. These could be considered "ozone events" and may trigger air quality alerts.
-* Urban Heat Island Effect: Urban areas like Bronx consistently show higher temperatures and pollutant levels compared to surrounding areas, demonstrating the urban heat island effe
-
-![Prophet Model](Images/Prophet_Model.jpg)
-The plot above portrays that the Prophet Model is a good fit to predict future AQI trends!
+* Urban Heat Island Effect: Urban areas like Bronx consistently show higher temperatures and pollutant levels compared to surrounding areas, demonstrating the urban heat island effect.
 
 ## Result Summary
 Our analysis revealed important temporal and spatial trends in air quality. Over multiple years, we observed long-term trends and seasonal patterns, with higher AQI scores typically occurring in the summer months. Spatial variations were also evident, with different counties exhibiting varying levels of air quality due to factors such as population density, industrial activity, and local geography. Pollutant-specific observations highlighted that ozone levels were higher in the summer, while PM2.5 levels showed significant variability and were often the primary drivers of high AQI scores. Nitrogen Dioxide levels were generally higher in urban areas and during winter months.
 
 The Random Forest Regressor model demonstrated high train accuracy at 98.9% and test accuracy at 92.6%, while the Prophet model showed that its predictive accuracy decreased over time, with RMSE between 9.48 to 12.95 points and mean absolute error (MAE) between 7.5 to 9.17 points.
+
+
+![Prophet Model](Images/Prophet_Model.jpg)
+The plot above portrays that the Prophet Model is a good fit to predict future AQI trends!
+
 
 ## Future Work
 Future enhancements could include connecting weather and mortality data to our analysis for a more comprehensive view of air quality impacts. Additionally, developing a frontend dashboard to pull data by zip code would make the information more accessible to the public. Learning and implementing ARIMA models could also improve our forecasting accuracy.
@@ -114,5 +116,7 @@ https://gamma.app/docs/Air-Quality-A-Critical-Global-Concern-zuamahmfgrbgjo2?mod
 ## Contact
 For any questions or issues, please open an issue on the GitHub repository or contact the project maintainers through GitHub.
 
-## Reference
+## References
 OpenAI. (2024). ChatGPT: Chatbot by OpenAI. Retrieved from https://www.openai.com
+https://aqs.epa.gov/aqsweb/documents/data_api.html#signup
+https://aqs.epa.gov/aqsweb/documents/codetables/parameter_classes.html

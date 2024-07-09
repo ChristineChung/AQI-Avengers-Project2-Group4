@@ -30,7 +30,7 @@ We began by collecting AQI data from the EPA using their API. This data was then
 
 ## Visualizations
 ![EDA](Images/Distribution of AQI Scores by County.png)
-Temporal Trends:
+### Temporal Trends:
 * The data spans multiple years, allowing us to observe long-term trends in air quality.
 * There are clear seasonal patterns in air quality, with generally higher AQI scores in summer months.
 * Over the years, there's a slight improvement in overall air quality, but this trend isn't consistent across all pollutants

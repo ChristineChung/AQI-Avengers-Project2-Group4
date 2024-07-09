@@ -107,7 +107,7 @@ cd project_directory
 2. Navigate to the project directory:  
 `cd AQI-Detectives`  
 3. Run the Jupyter notebook to interact with the data and perform analyses:  
-`jupyter notebook`  
+`jupyter notebook`  . We reccomenend running the file called CC_cleanedfinal first, which contains the API call to the EPA website. 
 
 
 ## Presentation Link

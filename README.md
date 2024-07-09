@@ -29,27 +29,27 @@ The AQI data for New York City has been sourced from the Environmental Protectio
 We began by collecting AQI data from the EPA using their API. This data was then cleaned and preprocessed, followed by extensive Exploratory Data Analysis (EDA). For model development, we employed several supervised learning machine learning models, including Logistic Regression, K-Nearest Neighbors (KNN), Decision Tree, Random Forest Regressor, Linear Regression, and Prophet. These models were rigorously checked for data leakage and optimized through accuracy, precision, R-squared, mean squared error (MSE), and cross-validation checks. We decided to use the Random Forest and Prophet models to make predictions for the next year based on their performance.
 
 ## Visualizations
-![EDA](Images/Distribution of AQI Scores by County.png)
+![EDA](Images/Distribution_of_AQI_Scores_by_County.png)
 ### Temporal Trends:
 * The data spans multiple years, allowing us to observe long-term trends in air quality.
 * There are clear seasonal patterns in air quality, with generally higher AQI scores in summer months.
 * Over the years, there's a slight improvement in overall air quality, but this trend isn't consistent across all pollutants
 
-![ ](Images/Distribution of AQI Scores by Season.png)
+![ ](Images/Distribution_of_AQI_Scores_by_Season.png)
 * Seasonal Variation: Compare the median (middle line of each box) across seasons. Higher medians indicate worse air quality.
 * Variability: The size of each box represents the interquartile range. Larger boxes suggest more variable air quality within that season.
 * Outliers: Points beyond the whiskers are outliers, representing unusually high AQI scores. More outliers in a season suggest more frequent pollution events.
 * Seasonal Patterns: Patterns such as higher AQI scores in summer (potentially due to increased ozone) or winter (possibly due to increased particulate matter from heating).
 
-![ ](Images/Distribution of AQI Scores by Year and County.png)
-* Observations and Outliers:
+![ ](Images/Distribution_of_AQI_Scores_by_Year_and_County.png)
+### Observations and Outliers:
 Canadian Wildfires: Most recently, in June 2023, severe wildfires in Quebec led to significant air quality issues in New York and other parts of the northeastern United States. This event caused some of the worst air quality readings in recent history for the region, with AQI levels reaching "Hazardous" levels in some areas. While the provided dataset doesn't explicitly mention Canadian wildfires, we can infer their impact by looking for unusual spikes in PM2.5 levels, especially during summer months.
-* Other Notable Observations:
-1. Winter Inversions: There are periods in winter months where pollutant levels (particularly PM2.5 and NO2) remain elevated for several days, possibly due to temperature inversions trapping pollutants near the ground.
-2. Summer Ozone Events: Occasionally, there are days with very high ozone levels, typically during hot, sunny days in summer. These could be considered "ozone events" and may trigger air quality alerts.
-3. Urban Heat Island Effect: Urban areas like Bronx consistently show higher temperatures and pollutant levels compared to surrounding areas, demonstrating the urban heat island effe
+### Other Notable Observations:
+* Winter Inversions: There are periods in winter months where pollutant levels (particularly PM2.5 and NO2) remain elevated for several days, possibly due to temperature inversions trapping pollutants near the ground.
+* Summer Ozone Events: Occasionally, there are days with very high ozone levels, typically during hot, sunny days in summer. These could be considered "ozone events" and may trigger air quality alerts.
+* Urban Heat Island Effect: Urban areas like Bronx consistently show higher temperatures and pollutant levels compared to surrounding areas, demonstrating the urban heat island effe
 
-![Prophet Model](Images/Prophet Model.jpeg)
+![Prophet Model](Images/Prophet_Model.jpg)
 The plot above portrays that the Prophet Model is a good fit to predict future AQI trends!
 
 ## Result Summary
@@ -61,16 +61,16 @@ The Random Forest Regressor model demonstrated high train accuracy at 98.9% and 
 Future enhancements could include connecting weather and mortality data to our analysis for a more comprehensive view of air quality impacts. Additionally, developing a frontend dashboard to pull data by zip code would make the information more accessible to the public. Learning and implementing ARIMA models could also improve our forecasting accuracy.
 
 ### Visualizations for Future Use
-![ ](Images/Average Temperature of Different Counties Over Years.png)
+![ ](Images/Average_Temperature_of_Different_Counties_Over_Years.png)
 This graph shows the average temperature trends over the years across different counties. Analyzing temperature trends is crucial because temperature variations can influence air quality. Higher temperatures, particularly in urban areas, can lead to the formation of ground-level ozone and increase the concentration of pollutants like PM2.5. Continue exploring and analyzing temperature and weather data can help us understand the correlation between weather and air quality, allowing for more accurate predictions and targeted interventions.
 
-![ ](Images/Total mortality rate.png)
+![ ](Images/Total_Mortality_Rate.png)
 This graph depicts the total mortality rate across various regions. Understanding mortality rates in relation to air quality data could be helpful, as poor air quality has been linked to increased mortality, particularly from cardiovascular and respiratory diseases. By overlaying air quality data with mortality rates, we can identify the extent to which air pollution contributes to overall mortality, enabling more informed public health decisions and policies.
 
-![ ](Images/Asthma Mortality Rate.png)
+![ ](Images/Asthma_Mortality_Rate.png)
 This graph focuses on the mortality rate due to asthma. Asthma patients are particularly vulnerable to poor air quality, with high levels of pollutants often triggering severe asthma attacks. By correlating asthma mortality rates with AQI data, we can assess the impact of air pollution on asthma-related deaths and identify critical periods or areas requiring immediate attention to protect vulnerable populations.
 
-![ ](Images/Cardiovascular disease mortality rate.png)
+![ ](Images/Cardiovascular_Disease_Mortality_Rate.png)
 This visualization illustrates the mortality rate due to cardiovascular diseases. Poor air quality, especially high levels of particulate matter (PM2.5), is a risk factor for cardiovascular diseases, may contributing to increased mortality. Analyzing this data alongside air quality trends can help identify high-risk areas and times, thereby supporting the development of targeted interventions to reduce cardiovascular disease mortality associated with air pollution.
 
 

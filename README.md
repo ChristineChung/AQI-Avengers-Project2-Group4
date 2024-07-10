@@ -23,7 +23,26 @@ New York City, one of the most densely populated cities in the United States, fa
 Understanding the trends and patterns in air pollution can help policymakers and health officials implement better strategies to improve air quality. By predicting future AQI levels, we can provide timely warnings to vulnerable populations, helping them make informed decisions about outdoor activities. This project aims to contribute to public health awareness and support efforts to mitigate the adverse effects of air pollution.
 
 ## Data Sources
-The AQI data for New York City has been sourced from the Environmental Protection Agency (EPA). 
+The AQI data for New York City has been sourced from the Environmental Protection Agency (EPA).  
+
+Data extracted for Counties:  
+005 Bronx  
+047 Kings  
+059 Nassau  
+061 NYC  
+081 Queens  
+085 Richmond  
+103 Suffolk    
+
+Parameter Codes used in data extraction:  
+
+42101 - Carbon monoxide  
+44201 - Ozone  
+88101 - PM2.5  
+88502 - Acceptable PM2.5 AQI & Speciation Mass  
+81102 - PM10  
+42401 - Sulfer Dioxide  
+42602 - Nitrogen Dioxide  
 
 ## Methodology
 We began by collecting AQI data from the EPA using their API. This data was then cleaned and preprocessed, followed by extensive Exploratory Data Analysis (EDA). For model development, we employed several supervised learning machine learning models, including Logistic Regression, K-Nearest Neighbors (KNN), Decision Tree, Random Forest Regressor, Linear Regression, and Prophet. These models were rigorously checked for data leakage and optimized through accuracy, precision, R-squared, mean squared error (MSE), and cross-validation checks. We decided to use the Random Forest and Prophet models to make predictions for the next year based on their performance.
